@@ -1,0 +1,32 @@
+﻿@page "/DeleteActivity/{Id}"
+@using Share.Dto;
+
+<h2>حذف وظیفه</h2>
+@if (Activity != null)
+{
+    <p>آیا از حذف این وظیفه مطمعن هستید؟ <b>@Activity.UserFullName</b></p>
+    <div class="row">
+        <table class="table">
+            <tr>
+                <td>وظیفه</td>
+                <td>@Activity.Title</td>
+            </tr>
+            <tr>
+                <td>توضیحات</td>
+                <td>@Activity.Description</td>
+            </tr>          
+        </table>
+    </div>
+}
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input type="button" class="btn btn-success" @onclick="@(() => Delete(Activity.Id))" value="حذف" />
+            <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+        </div>
+    </div>
+</div>
+
+
+
+

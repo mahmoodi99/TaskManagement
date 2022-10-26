@@ -1,0 +1,29 @@
+﻿@page "/AddRole"
+@using Share.Dto
+
+<section class="AddRole">
+    <span class="border-lable-right">
+        <div class="card-header">
+            <fieldset>
+                <td class="align-middle">
+                    <h1 class="page-title">ایجاد سمت</h1>
+                </td>
+            </fieldset>
+        </div>
+    </span>
+    <hr />
+
+    <EditForm Model="@Role" OnValidSubmit="Save">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+
+        <div class="form-group row">
+            <label for="title" class="col-sm-3">: عنوان</label>
+            <InputText class="form-control col-sm-10" @bind-Value="@Role.Title" ></InputText>
+            <ValidationMessage For="@(() => Role.Title)" />
+        </div>       
+        <div class="card-footer">
+            <input type="submit" class="btn btn-success"  value="ذخیره" />
+            <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+        </div>
+    </EditForm>
+</section>

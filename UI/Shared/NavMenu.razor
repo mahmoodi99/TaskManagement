@@ -1,0 +1,70 @@
+﻿
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">پنل مدیریت</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> خانه
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="ActivityList">
+                <span class="oi oi-plus" aria-hidden="true"></span> وظایف
+            </NavLink>
+        </div>
+        <div class="nav-item has-submenu px-3">
+            <NavLink class="nav-link collapsed" href="BaseInfo" data-toggle="collapse" data-target="#BaseInfoSubMenu">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> اطلاعات پایه
+            </NavLink>
+           
+            <ul class="nav-submenu collapse list-unstyled" id="BaseInfoSubMenu">              
+                <li class="nav-subitem">
+                    <NavLink href="UnitList">
+                        <span class="oi" aria-hidden="true"></span> مدیریت پروژه
+                    </NavLink>
+                </li>
+                <li class="nav-subitem">
+                    <NavLink href="UserList">
+                        <span class="oi" aria-hidden="true"></span> مدیریت کاربران
+                    </NavLink>
+                </li>
+                <li class="nav-subitem">
+                    <NavLink href="RoleList">
+                        <span class="oi" aria-hidden="true"></span> مدیریت سمت
+                    </NavLink>
+                </li>
+                <li class="nav-subitem">
+                    <NavLink href="StatusList">
+                        <span class="oi" aria-hidden="true"></span> مدیریت وضعیت
+                    </NavLink>
+                </li>
+                <li class="nav-subitem">
+                    <NavLink href="Log_ActivityList">
+                        <span class="oi" aria-hidden="true"></span> مشاهده لاگ
+                    </NavLink>
+                </li>
+                
+            </ul>
+                
+        </div>             
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

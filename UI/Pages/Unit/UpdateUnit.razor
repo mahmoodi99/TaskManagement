@@ -1,0 +1,43 @@
+﻿@page "/UpdateUnit/{Id}"
+@using Share.Dto
+
+
+@if (@Unit == null)
+{
+        <p>
+            <em>در حال بارگزاری...</em>
+        </p>
+}
+else
+
+{
+        <section class="Unit-edit">
+
+            <h1 class="page-title">ویرایش وظیفه : @Unit.Title</h1>
+            <hr />
+
+            <EditForm Model="@Unit" OnValidSubmit="HandleValidSubmit">
+                <DataAnnotationsValidator></DataAnnotationsValidator>
+                <ValidationSummary />
+
+                <div class="form-group row">
+                    <label for="title" class="col-sm-3">: عنوان</label>
+                    <InputText class="form-control col-sm-10" @bind-Value="@Unit.Title" placeholder="عنوان پروژخ را وارد نمایید"></InputText>
+
+                </div>
+                <div class="form-group row">
+                    <label for="Descriptionِ" class="col-sm-3"> توضیحات: </label>
+                    <InputText id="Description" class="form-control col-sm-10" @bind-Value="@Unit.Description" placeholder="توضیحات را وارد نمایید "></InputText>
+
+                </div>             
+
+                <div class="card-footer">
+                    <a href="/DeleteUnit/@Unit.Id" class="btn btn-danger">حذف</a>
+                    <button class="btn btn-success" type="submit">ذخیره</button>                           
+                    <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+                </div>
+            </EditForm>
+        </section>
+
+}
+

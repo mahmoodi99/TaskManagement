@@ -1,0 +1,29 @@
+﻿@page "/DeleteUser/{Id}"
+
+@using Share.Dto;
+
+<h2>حذف کاربر</h2>
+@if ( User != null)
+{
+    <p>آیا از حذف این کاربر مطمعن هستید؟ <b>@User.FirstName</b></p>
+    <div class="row">
+        <table class="table">
+            <tr>
+                <td>نام کاربر</td>
+                <td>@User.UserName</td>
+            </tr>
+            <tr>
+                <td>کد ملی</td>
+                <td>@User.NationalCode</td>
+            </tr>
+        </table>
+    </div>
+}
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input type="button" class="btn btn-success" @onclick="@(() => Delete(User.Id))" value="حذف" />
+            <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+        </div>
+    </div>
+</div>

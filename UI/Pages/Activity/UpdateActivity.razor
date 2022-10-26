@@ -1,0 +1,94 @@
+﻿@page "/UpdateActivity/{Id}"
+@using Share.Dto
+
+
+@if (@Activity == null)
+{
+    <p>
+        <em>در حال بارگزاری...</em>
+    </p>
+}
+else
+
+{
+    <section class="activity-edit">
+
+        <h1 class="page-title">ویرایش وظیفه : @Activity.Title</h1>
+        <hr />
+
+        <EditForm Model="@Activity" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <ValidationSummary />
+
+            <div class="form-group row">
+                <label for="title" class="col-sm-3">: عنوان</label>
+                <InputText class="form-control col-sm-10" @bind-Value="@Activity.Title" placeholder="عنوان وظیفه را وارد نمایید"></InputText>
+
+            </div>
+            <div class="form-group row">
+                <label for="Descriptionِ" class="col-sm-3"> توضیحات: </label>
+                <InputText id="Description" class="form-control col-sm-10" @bind-Value="@Activity.Description" placeholder="توضیحات را وارد نمایید "></InputText>
+
+            </div>
+            <div class="form-group row">
+                <label for="status" class="col-sm-3 col-form-label">
+                    وضعیت
+                </label>
+                <div class="col-sm-10">
+                    @if (Statuses != null)
+                    {
+                        <InputSelect id="status" @bind-Value="Activity.StatusId" class="form-control">
+                            @foreach (var dept in Statuses)
+                            {
+                                <option value="@dept.Id">@dept.Title</option>
+                            }
+                        </InputSelect>
+                    }
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="user" class="col-sm-3 col-form-label">
+                    نام کاربر
+                </label>
+                <div class="col-sm-10">
+                    @if (Users != null)
+                    {
+                        <InputSelect @bind-Value="Activity.UserId" class="form-control">
+                            @foreach (var data in Users)
+                            {
+                                <option value="@data.Id">@data.FirstName " " @data.LastName</option>
+                            }
+                        </InputSelect>
+                    }
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="unit" class="col-sm-3 col-form-label">
+                    پروژه
+                </label>
+                <div class="col-sm-10">
+                    <InputSelect id="unit" @bind-Value="Activity.UnitId" class="form-control">
+                        <option value="">انتخاب کنید</option>
+                        @if (Units != null)
+                        {
+                            @foreach (var data in Units)
+                            {
+                                <option value="@data.Id">@data.Title</option>
+                            }
+                        }
+                    </InputSelect>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <a href="/DeleteActivity/@Activity.Id" class="btn btn-danger">حذف</a>
+                <button class="btn btn-success" type="submit" >ذخیره</button>
+                <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+            </div>
+        </EditForm>
+    </section>
+
+}
+

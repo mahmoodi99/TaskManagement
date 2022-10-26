@@ -1,0 +1,77 @@
+﻿@page "/AddUser"
+
+@using Share.Dto
+
+<section class="AddUser">
+    <span class="border-lable-right">
+        <div class="card-header">
+            <fieldset>
+                <td class="align-middle">
+                    <h1 class="page-title">ایجاد کابر</h1>
+                </td>
+            </fieldset>
+        </div>
+    </span>
+    <hr />
+
+    <EditForm Model="@User" OnValidSubmit="Save">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+      
+
+        <div class="form-group row">
+            <label for="FirstName" class="col-sm-3">: نام کاربر</label>
+            <InputText class="form-control col-sm-10" @bind-Value="@User.FirstName" ></InputText>
+            <ValidationMessage For="@(() => User.FirstName)" />
+
+        </div>
+        <div class="form-group row">
+            <label for="LastName" class="col-sm-3">: نام خانوادگی کاربر</label>
+            <InputText class="form-control col-sm-10" @bind-Value="@User.LastName" ></InputText>
+            <ValidationMessage For="@(() => User.LastName)" />
+        </div>
+        <div class="form-group row">
+            <label for="NationalCode" class="col-sm-3"> کد ملی: </label>
+            <InputText id="NationalCode" class="form-control col-sm-10" @bind-Value="@User.NationalCode" ></InputText>
+            <ValidationMessage For="@(() => User.NationalCode)" />
+        </div>        
+        <div class="form-group row">
+            <label for="Mobile" class="col-sm-3"> موبایل: </label>
+            <InputText id="Mobile" class="form-control col-sm-10" @bind-Value="@User.Mobile" ></InputText>
+            <ValidationMessage For="@(() => User.Mobile)" />
+        </div>
+        <div class="form-group row">
+            <label for="UserName" class="col-sm-3"> نام کاربری: </label>
+            <InputText id="UserName" class="form-control col-sm-10" @bind-Value="@User.UserName" ></InputText>
+            <ValidationMessage For="@(() => User.UserName)" />
+        </div>
+        <div class="form-group row">
+            <label for="Password" class="col-sm-3"> رمز ورود: </label>
+            <InputText id="Password" class="form-control col-sm-10" @bind-Value="@User.Password" ></InputText>
+            <ValidationMessage For="@(() => User.Password)" />
+        </div>
+        <div class="form-group row">
+            <label for="Role" class="col-sm-3 col-form-label">
+                سمت
+            </label>
+            <div class="col-sm-10">
+                @if (Roles != null)
+                {
+                        <InputSelect id="Role" @bind-Value="User.RoleId" class="form-control">
+                            <option value="">انتخاب کنید</option>
+                        @foreach (var role in Roles)
+                        {
+                                    <option value="@role.Id">@role.Title</option>
+                        }
+                        </InputSelect>
+                    <ValidationMessage For="@(() => User.RoleId)" />
+                }
+                
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <input type="submit" class="btn btn-success"  value="ذخیره" />
+            <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+        </div>
+    </EditForm>
+</section>

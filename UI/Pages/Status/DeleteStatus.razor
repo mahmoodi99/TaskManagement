@@ -1,0 +1,24 @@
+﻿@page "/DeleteStatus/{Id}"
+@using Share.Dto;
+
+<h2>حذف وضعیت</h2>
+@if (Status != null)
+{
+    <p>آیا از حذف این وضعیت مطمعن هستید؟ <b>@Status.Title</b></p>
+    <div class="row">
+        <table class="table">
+            <tr>
+                <td>عنوان</td>
+                <td>@Status.Title</td>
+            </tr>
+        </table>
+    </div>
+}
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input type="button" class="btn btn-success" @onclick="@(() => Delete(Status.Id))" value="حذف" />
+            <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+        </div>
+    </div>
+</div>

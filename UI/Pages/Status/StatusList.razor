@@ -1,0 +1,47 @@
+﻿@page "/StatusList"
+@*@attribute [Authorize]*@
+<span class="border-lable-right">
+    <div class="card-header">
+        <fieldset>
+            <td class="align-middle">
+                <a href="/AddStatus" class="btn btn-success"> وضعیت جدید</a>
+            </td>
+        </fieldset>
+    </div>
+</span>
+@if (Statuses.Count > 0)
+{
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">عنوان</th>
+                <th scope="col">ویرایش</th>
+                <th scope="col">حذف</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Status in Statuses)
+            {
+                <tr>
+                    <td class="align-middle">
+                        @Status.Title
+                    </td>
+                    <td class="align-middle">
+                        <a href="@($"UpdateStatus/{Status.Id}")" class="btn btn-info">ویرایش</a>
+                    </td>
+                    <td class="align-middle">
+                        <a href="/DeleteStatus/@Status.Id" class="btn btn-danger">حذف</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <span>
+        در حال بارگزاری...
+    </span>
+}
+

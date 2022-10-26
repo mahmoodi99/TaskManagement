@@ -1,0 +1,73 @@
+﻿@page "/UpdateUser/{Id}"
+@using Share.Dto
+
+
+@if (@User == null)
+{
+    <p>
+        <em>در حال بارگزاری...</em>
+    </p>
+}
+else
+
+{
+    <section class="User-edit">
+
+        <h1 class="page-title">ویرایش کاربر : @User.LastName</h1>
+        <hr />
+
+        <EditForm Model="@User" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <ValidationSummary />
+
+            <div class="form-group row">
+                <label for="title" class="col-sm-3">: نام کاربر</label>
+                <InputText class="form-control col-sm-10" @bind-Value="@User.FirstName" placeholder="نام کاربر وظیفه را وارد نمایید"></InputText>
+
+            </div>
+            <div class="form-group row">
+                <label for="Descriptionِ" class="col-sm-3"> کد ملی: </label>
+                <InputText id="Description" class="form-control col-sm-10" @bind-Value="@User.NationalCode" placeholder="کد ملی را وارد نمایید "></InputText>
+
+            </div>         
+            <div class="form-group row">
+                <label for="Descriptionِ" class="col-sm-3"> موبایل: </label>
+                <InputText id="Description" class="form-control col-sm-10" @bind-Value="@User.Mobile" placeholder="موبایل را وارد نمایید "></InputText>
+
+            </div>
+            <div class="form-group row">
+                <label for="Descriptionِ" class="col-sm-3"> نام کاربری: </label>
+                <InputText id="Description" class="form-control col-sm-10" @bind-Value="@User.UserName" placeholder="نام کاربری را وارد نمایید "></InputText>
+
+            </div>
+            
+
+            <div class="form-group row">
+                <label for="unit" class="col-sm-3 col-form-label">
+                    سمت
+                </label>
+                <div class="col-sm-10">
+                    <InputSelect id="role" @bind-Value="User.RoleId" class="form-control">
+                        <option value="">انتخاب کنید</option>
+                @if (Roles != null)
+                        {
+                            @foreach (var role in Roles)
+                            {
+                                <option value="@role.Id">@role.Title</option>
+                            }
+                        }
+                    </InputSelect>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <a href="/deleteUser/@User.Id" class="btn btn-danger">حذف</a>
+                <button class="btn btn-success" type="submit">ذخیره</button>
+                <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+            </div>
+        </EditForm>
+    </section>
+}
+
+
+

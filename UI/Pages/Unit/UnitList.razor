@@ -1,0 +1,53 @@
+﻿@page "/UnitList"
+@*@attribute [Authorize]*@
+
+<span class="border-lable-right">
+    <div class="card-header">
+        <fieldset>
+            <td class="align-middle">
+                <a href="/AddUnit" class="btn btn-success"> پروژه جدید</a>
+            </td>
+        </fieldset>
+    </div>
+</span>
+@if (Units.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">عنوان</th>
+                <th scope="col">توضیحات</th>
+                <th scope="col">ویرایش</th>
+                <th scope="col">حذف</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var unit in Units)
+            {
+                <tr>
+                    <td class="align-middle">
+                        @unit.Title
+                    </td>
+                    <td class="align-middle">
+                        @unit.Description
+                    </td>
+
+                    <td class="align-middle">
+                        <a href="@($"UpdateUnit/{unit.Id}")" class="btn btn-info">ویرایش</a>
+                    </td>
+                    <td class="align-middle">
+                        <a href="/DeleteUnit/@unit.Id" class="btn btn-danger">حذف</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <span>
+        در حال بارگزاری...
+    </span>
+}
+

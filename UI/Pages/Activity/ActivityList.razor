@@ -1,0 +1,71 @@
+﻿@page "/ActivityList"
+
+
+<span class="border-lable-right">
+    <div class="card-header">
+        <fieldset>
+            <td class="align-middle">
+                <a href="/AddActivity" class="btn btn-success">وظیفه جدید </a>
+            </td>
+        </fieldset>
+    </div>
+</span>
+<div class="col-md-5">
+    <Search OnSearchChanged="SearchChanged" />
+</div>
+@if (Activity.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">وظایف</th>
+                <th scope="col">توضیحات</th>
+                <th scope="col">وضعیت</th>
+                <th scope="col">نام کاربر</th>
+                <th scope="col">پروژه</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var activity in Activity)
+            {
+                <tr>
+                    <td class="align-middle">
+                        @activity.Title
+                    </td>
+                    <td class="align-middle">
+                        @activity.Description
+                    </td>
+                    <td class="align-middle">
+                        $@activity.StatusTitle
+                    </td>
+                    <td class="align-middle">
+                        $@activity.UserFullName
+                    </td>
+                    <td class="align-middle">
+                        $@activity.UnitTitle
+                    </td>
+                    <td class="align-middle">
+                        <a href="@($"UpdateActivity/{activity.Id}")" class="btn btn-info"> ویرایش </a>
+                    </td>
+                    <td class="align-middle">
+                        <a href="/DeleteActivity/@activity.Id" class="btn btn-danger">حذف</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <span>
+        در حال بارگزاری...
+    </span>
+}
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+﻿@page "/Logout"
+@using UI.ServiceHttp
+
+@code {
+
+    [Inject]
+    public ILoginUserService LoginUser { get; set; }
+
+    protected override async void OnInitialized()
+    {
+        await LoginUser.Logout();
+    }
+}

@@ -1,0 +1,47 @@
+﻿@page "/Log_ActivityList"
+@*@attribute [Authorize]*@
+
+@if (LogActivity.Count > 0)
+{   
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">وظایف</th>
+                <th scope="col">نام کاربر</th>
+                <th scope="col">وضعیت</th>
+                <th scope="col">تاریخ و ساعت</th>               
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var log in LogActivity)
+            {
+                <tr>
+                    <td class="align-middle">
+                        @log.ActivityTitle
+                    </td>
+                    <td class="align-middle">
+                        @log.UserFullName
+                    </td>
+                    <td class="align-middle">
+                        $@log.StatusTitle
+                    </td>
+                    <td class="align-middle">
+                        $@log.DateTime
+                    </td>                                                         
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <span>
+        در حال بارگزاری...
+    </span>
+}
+
+
+
+
+
+

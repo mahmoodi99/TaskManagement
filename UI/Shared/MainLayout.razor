@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+@using UI.ServiceHttp
+@inject ILoginUserService LoginUserService
+
+@*@if (LoginUserService.User != null)
+{*@
+<html lang="ar" dir="rtl">
+<div class="page">
+
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+    <main>
+        <div class="top-row px-4">
+            <LoginDisplay />
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">درباره ما</a>
+        </div>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+</html>
+
+@*@*}*@

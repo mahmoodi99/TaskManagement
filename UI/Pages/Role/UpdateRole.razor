@@ -1,0 +1,38 @@
+﻿@page "/UpdateRole/{Id}"
+@using Share.Dto
+
+
+@if (@Role == null)
+{
+    <p>
+        <em>در حال بارگزاری...</em>
+    </p>
+}
+else
+
+{
+    <section class="Role-edit">
+
+        <h1 class="page-title">ویرایش سمت : @Role.Title</h1>
+        <hr />
+
+        <EditForm Model="@Role" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <ValidationSummary />
+
+            <div class="form-group row">
+                <label for="title" class="col-sm-3">: عنوان</label>
+                <InputText class="form-control col-sm-10" @bind-Value="@Role.Title" placeholder="عنوان سمت را وارد نمایید"></InputText>
+            </div>
+           
+
+            <div class="card-footer">
+                <a href="/DeleteRole/@Role.Id" class="btn btn-danger">حذف</a>
+                <button class="btn btn-success" type="submit">ذخیره</button>
+                <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+            </div>
+        </EditForm>
+    </section>
+
+}
+

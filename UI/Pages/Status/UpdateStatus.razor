@@ -1,0 +1,38 @@
+﻿@page "/UpdateStatus/{Id}"
+@using Share.Dto
+
+
+@if (@Status == null)
+{
+    <p>
+        <em>در حال بارگزاری...</em>
+    </p>
+}
+else
+
+{
+    <section class="Status-edit">
+
+        <h1 class="page-title">ویرایش وضعیت : @Status.Title</h1>
+        <hr />
+
+        <EditForm Model="@Status" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <ValidationSummary />
+
+            <div class="form-group row">
+                <label for="title" class="col-sm-3">: عنوان</label>
+                <InputText class="form-control col-sm-10" @bind-Value="@Status.Title" placeholder="عنوان وضعیت را وارد نمایید"></InputText>
+            </div>
+           
+
+            <div class="card-footer">
+                <a href="/DeleteStatus/@Status.Id" class="btn btn-danger">حذف</a>
+                <button class="btn btn-success" type="submit">ذخیره</button>
+                <input type="button" class="btn btn-danger" @onclick="@Cancel" value="انصراف" />
+            </div>
+        </EditForm>
+    </section>
+
+}
+
