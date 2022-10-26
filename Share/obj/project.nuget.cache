@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CWcNCkaMOU1x+OHYAe04DR413lToH/jCUXjPezseq8UT7cduGxmRQwSnlr1ByRFzlaR7eYIyRXPrlIgM8LKe/w==",
+  "success": true,
+  "projectFilePath": "F:\\TaskManagement\\Share\\Share.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acer\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

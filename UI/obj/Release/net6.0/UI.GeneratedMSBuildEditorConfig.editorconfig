@@ -1,0 +1,143 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = UI
+build_property.RootNamespace = UI
+build_property.ProjectDir = F:\TaskManagement\UI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\TaskManagement\UI
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/TaskManagement/UI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Account/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Account/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Activity/ActivityList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdHlcQWN0aXZpdHlMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Activity/AddActivity.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdHlcQWRkQWN0aXZpdHkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Activity/DeleteActivity.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdHlcRGVsZXRlQWN0aXZpdHkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Activity/UpdateActivity.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdHlcVXBkYXRlQWN0aXZpdHkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Log_Activity/Log_ActivityList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nX0FjdGl2aXR5XExvZ19BY3Rpdml0eUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Register/Registration.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJcUmVnaXN0cmF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Role/AddRole.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZVxBZGRSb2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Role/DeleteRole.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZVxEZWxldGVSb2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Role/RoleList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZVxSb2xlTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Role/UpdateRole.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZVxVcGRhdGVSb2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Status/AddStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzXEFkZFN0YXR1cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Status/DeleteStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzXERlbGV0ZVN0YXR1cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Status/StatusList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzXFN0YXR1c0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Status/UpdateStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzXFVwZGF0ZVN0YXR1cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Unit/AddUnit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdFxBZGRVbml0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Unit/DeleteUnit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdFxEZWxldGVVbml0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Unit/UnitList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdFxVbml0TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/Unit/UpdateUnit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdFxVcGRhdGVVbml0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/User/AddUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxBZGRVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/User/DeleteUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxEZWxldGVVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/User/UpdateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxVcGRhdGVVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Pages/User/UserList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxVc2VyTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/UI/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-v226h684v7
+
+[F:/TaskManagement/UI/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-h1hcfmdrah

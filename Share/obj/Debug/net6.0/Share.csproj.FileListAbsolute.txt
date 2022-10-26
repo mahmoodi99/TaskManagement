@@ -1,0 +1,12 @@
+F:\TaskManagement\Share\bin\Debug\net6.0\Share.deps.json
+F:\TaskManagement\Share\bin\Debug\net6.0\Share.dll
+F:\TaskManagement\Share\bin\Debug\net6.0\Share.pdb
+F:\TaskManagement\Share\obj\Debug\net6.0\Share.csproj.AssemblyReference.cache
+F:\TaskManagement\Share\obj\Debug\net6.0\Share.GeneratedMSBuildEditorConfig.editorconfig
+F:\TaskManagement\Share\obj\Debug\net6.0\Share.AssemblyInfoInputs.cache
+F:\TaskManagement\Share\obj\Debug\net6.0\Share.AssemblyInfo.cs
+F:\TaskManagement\Share\obj\Debug\net6.0\Share.csproj.CoreCompileInputs.cache
+F:\TaskManagement\Share\obj\Debug\net6.0\Share.dll
+F:\TaskManagement\Share\obj\Debug\net6.0\refint\Share.dll
+F:\TaskManagement\Share\obj\Debug\net6.0\Share.pdb
+F:\TaskManagement\Share\obj\Debug\net6.0\ref\Share.dll

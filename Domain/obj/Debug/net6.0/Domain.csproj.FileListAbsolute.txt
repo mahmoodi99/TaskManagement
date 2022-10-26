@@ -1,0 +1,12 @@
+F:\TaskManagement\Domain\bin\Debug\net6.0\Domain.deps.json
+F:\TaskManagement\Domain\bin\Debug\net6.0\Domain.dll
+F:\TaskManagement\Domain\bin\Debug\net6.0\Domain.pdb
+F:\TaskManagement\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+F:\TaskManagement\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\TaskManagement\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+F:\TaskManagement\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+F:\TaskManagement\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+F:\TaskManagement\Domain\obj\Debug\net6.0\Domain.dll
+F:\TaskManagement\Domain\obj\Debug\net6.0\refint\Domain.dll
+F:\TaskManagement\Domain\obj\Debug\net6.0\Domain.pdb
+F:\TaskManagement\Domain\obj\Debug\net6.0\ref\Domain.dll
