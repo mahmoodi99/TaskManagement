@@ -16,7 +16,7 @@ namespace Services.EFService
         DateTime thisDate = DateTime.Now;
         public Log_ActivityService(TaskManageContext ctx, IMapper mapper)
         {
-            this.ctx = ctx;
+             ctx = ctx;
             _mapper = mapper;
         }
        
