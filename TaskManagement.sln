@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{A7CDFC3F-F50D-4197-A400-636AD8354E00}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{0FB39CFA-5202-43C2-984F-078D30DD4A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "WebApp\Api.csproj", "{0FB39CFA-5202-43C2-984F-078D30DD4A19}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{4F119049-9192-4558-828D-983EA8C709BD}"
 EndProject

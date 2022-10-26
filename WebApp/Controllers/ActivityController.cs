@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Services.Interface;
 using Microsoft.AspNetCore.Cors;
 
-namespace WebApp.Controllers
+namespace Api.Controllers
 {
     
     [Route("api/[controller]")]

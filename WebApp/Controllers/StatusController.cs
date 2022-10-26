@@ -3,7 +3,7 @@ using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Services.Interface;
 
-namespace WebApp.Controllers
+namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

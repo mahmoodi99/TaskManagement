@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Services.Interface;
 using Services.EFService;
 
-namespace WebApp.Controllers
+namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

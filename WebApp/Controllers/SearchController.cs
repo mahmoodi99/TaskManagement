@@ -2,7 +2,7 @@
 using Services.Interface;
 using Share.Dto;
 
-namespace WebApp.Controllers
+namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -19,14 +19,8 @@ namespace WebApp.Controllers
         [HttpGet("{text}")]
         public IActionResult Get([FromRoute] string text)
         {
-            //if(text == null)
-            //{
-            //    var empty =  _activityService.GetAll();
-            //    return Ok(empty);
-            //}
-            //else
-            //{
-                var data = _activityService.GetActivity(text);
+
+            var data = _activityService.GetActivity(text);
 
             if (data == null)
             {

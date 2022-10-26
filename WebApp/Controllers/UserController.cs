@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Domain;
 
-namespace WebApp.Controllers
+namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

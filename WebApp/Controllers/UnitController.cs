@@ -5,7 +5,7 @@ using Services.Interface;
 
 
 
-namespace WebApp.Controllers
+namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
