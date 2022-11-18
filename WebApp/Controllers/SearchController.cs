@@ -19,15 +19,12 @@ namespace Api.Controllers
         [HttpGet("{text}")]
         public IActionResult Get([FromRoute] string text)
         {
-
             var data = _activityService.GetActivity(text);
-
             if (data == null)
             {
                 return Ok("وظیفه ای با این عنوان وجود ندارد");
             }
             return Ok(data);
-
         }
     }
 }
